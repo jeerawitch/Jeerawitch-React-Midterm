@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  gap: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 5rem;
+  background-color: #39d3a0;
+}
+
+span {
+  color: #047954;
+}
+
+.logoimage {
+  width: 35px;
+}

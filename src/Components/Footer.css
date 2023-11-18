@@ -1,0 +1,18 @@
+.footer {
+  text-align: center;
+  background-color: #39d3a0;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+.footer h5 {
+  font-family: "Dancing Script";
+  color: #0a865d;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 13.5rem;
+  }
+}

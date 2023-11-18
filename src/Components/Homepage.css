@@ -1,0 +1,111 @@
+.img {
+  width: 100%;
+}
+
+.main {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem 5rem 5rem;
+}
+
+.img-container {
+  margin-top: 3rem;
+}
+
+.main-center {
+  width: 90vw;
+  max-width: 1120px;
+}
+
+.main-title h1 {
+  font-family: "Agbalumo";
+  color: #059669;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+.main-title h3 {
+  color: #237d5f;
+  font-family: "Noto Sans Thai";
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.main-title h4 {
+  letter-spacing: 1px;
+  line-height: 2;
+  color: #4c8f74;
+}
+
+.main-title p {
+  line-height: 2;
+  max-width: 35em;
+  margin-bottom: 0.5rem;
+  color: #4c8f74;
+}
+
+hr {
+  border-color: #b2e4d4;
+  margin-bottom: 1rem;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.html-logo {
+  width: 40px;
+  filter: drop-shadow(5px 5px 4px #f2c342);
+}
+
+.css-logo {
+  width: 40px;
+  filter: drop-shadow(5px 5px 4px #38dae0);
+}
+
+.js-logo {
+  width: 40px;
+  filter: drop-shadow(5px 5px 4px #9de73d);
+}
+
+.react-logo {
+  width: 40px;
+  filter: drop-shadow(5px 5px 4px #38dae0);
+}
+
+@media (min-width: 992px) {
+  .main-center {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    gap: 4rem;
+  }
+
+  .main-title h3 {
+    line-height: 1;
+  }
+
+  .img-container {
+    margin-top: 0;
+  }
+
+  .main {
+    padding: 3.5rem 10rem 5rem 0rem;
+  }
+}
