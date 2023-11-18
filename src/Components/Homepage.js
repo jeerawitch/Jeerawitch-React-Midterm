@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./Homepage.css";
 import Phone from "../assets/phone.svg";
 import html from "../assets/html.png";
@@ -6,6 +7,14 @@ import js from "../assets/js.png";
 import react from "../assets/react.png";
 
 const Homepage = () => {
+  const [message, setMessage] = useState("Subject");
+  const handleShowInfoClick = () => {
+    setMessage("CPE499 - React.JS");
+  };
+  const handleBackClick = () => {
+    setMessage("Subject");
+  };
+
   return (
     <section className="main">
       <div className="main-center">
@@ -28,6 +37,19 @@ const Homepage = () => {
           <div className="information">
             <h4>Age : </h4>
             <p>21 year</p>
+          </div>
+          <div className="subject">
+            {message === "Subject" && (
+              <button onClick={handleShowInfoClick} className="btn">
+                Show Subject
+              </button>
+            )}
+            {message !== "Subject" && (
+              <button onClick={handleBackClick} className="btn">
+                Back
+              </button>
+            )}
+            <h4>{message}</h4>
           </div>
           <div className="skill">
             <img src={html} alt="html.png" className="html-logo" />
